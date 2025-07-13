@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Hangfire.Core" Version="1.8.20" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.7" />
+	<PackageReference Include="BCrypt.Net-Core" Version="1.6.0" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UserManagementAPI.Application\UserManagementAPI.Application.csproj" />
+    <ProjectReference Include="..\UserManagementAPI.Domain\UserManagementAPI.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
