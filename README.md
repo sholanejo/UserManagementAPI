@@ -1,6 +1,6 @@
 # UserManagementAPI
 
-## 📘 Project Overview
+## Project Overview
 
 UserManagementAPI is a secure ASP.NET Core Web API for managing users. It supports:
 - User registration, update, soft-delete, and restoration
@@ -12,7 +12,7 @@ UserManagementAPI is a secure ASP.NET Core Web API for managing users. It suppor
 
 ---
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
 ### Prerequisites
 - [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download)
@@ -46,29 +46,21 @@ Edit
 }
 
 API Usage
-🔑 AuthController
+AuthController
 POST /api/auth/login
-json
-Copy
-Edit
+
 {
-  "email": "admin@example.com",
-  "password": "Admin123!"
+  "email": "admin@system.com",
+  "password": "StrongPassword1$"
 }
 POST /api/auth/validate
-json
-Copy
-Edit
 "eyJhbGciOiJIUzI1NiIsIn..."
-👤 UsersController (Requires JWT Bearer Token)
+
+UsersController (Requires JWT Bearer Token)
 GET /api/users?page=1&pageSize=10&search=tim
 GET /api/users/{id}
 POST /api/users
 Role: Admin
-
-json
-Copy
-Edit
 {
   "firstName": "Tim",
   "lastName": "Cook",
