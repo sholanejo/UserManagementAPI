@@ -29,10 +29,6 @@ dotnet run
 
 ### Configuration
 Update your appsettings.Development.json or secrets with:
-
-json
-Copy
-Edit
 {
   "JwtSettings": {
     "Secret": "YourSuperSecretKey",
